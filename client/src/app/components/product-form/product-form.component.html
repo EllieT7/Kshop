@@ -1,0 +1,61 @@
+<a class="btn btn-success" routerLink="/admin" style="width: 100px; margin-left:50px; margin-top:50px">Atrás</a>
+
+<div style="height: 100px;"></div>
+
+<div class="col-md-4 offset-md-2">
+    <h3>{{titulo}}</h3>
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="title" [(ngModel)]="product.nombre" placeholder="Title" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea name="message" rows="2" [(ngModel)]="product.descripcion" placeholder="Description" class="form-control" #message='ngModel'>{{product.descripcion}}</textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="description" [(ngModel)]="product.precio" placeholder="Precio" class="form-control">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="file" (change)="onPhotoSelected($event)" #photoInput>
+                </div>
+                <br>
+                <div class="form-group">
+                    <select class="browser-default custom-select" [(ngModel)]="product.artista_id_artista" [ngModelOptions]="{standalone: true}"> 
+                        <option selected="">Selecciona un artista</option>
+                        <option *ngFor="let artist of artists" [ngValue]="artist.id_artista">{{artist.nombre}}</option>
+                      </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <select class="browser-default custom-select" [(ngModel)]="product.tipo_producto_id_tp" [ngModelOptions]="{standalone: true}"> 
+                        <option selected="">Selecciona un tipo de producto</option>
+                        <option *ngFor="let type of types" [ngValue]="type.id_tp">{{type.descripcion}}</option>
+                      </select>
+                </div>
+                <button class="btn btn-success w-100 mt-4" (click)="edit ? updateProduct() : uploadPhoto()">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+        <div class="card text-center m-4">
+            <div class="card-header">
+                {{product.nombre == '' ? 'Titulo': product.nombre}}
+            </div>
+            <div style="display: flex; width: 100%; height: 300px;" >
+                <img [src]="photoSelected || 'http://localhost:3000/' +product.img" class="img-fluid" alt="No image"
+                    (click)="photoInput.click()"  style="object-fit: cover;">
+            </div>
+            
+            <div class="card card-body">
+              <p>Bs. {{product.precio == 0 ? '0.0': product.precio}}</p>
+            </div>
+        </div>
+</div>

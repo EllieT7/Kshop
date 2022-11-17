@@ -1,0 +1,40 @@
+<a class="btn btn-success" routerLink="/admin" style="width: 100px; margin-left:50px; margin-top:50px">Atrás</a>
+<div style="height: 100px;"></div>
+
+<div class="col-md-4 offset-md-2">
+    <h3>{{titulo}}</h3>
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="title" [(ngModel)]="artist.nombre" placeholder="Title" class="form-control" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea name="description" rows="2" [(ngModel)]="artist.descripcion" placeholder="Description" class="form-control"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="file"  (change)="onPhotoSelected($event)" #photoInput>
+                    
+                </div>
+                <button class="btn btn-success w-100 mt-4" (click)="edit ? updateArtist() : saveNewArtist()">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card text-center m-4">
+        <div class="card-header">
+            {{ artist.nombre  == '' ? 'Nombre': artist.nombre}}    
+        </div>
+        <div style="display: flex; width: 100%; height: 300px;" >
+            <img [src]="photoSelected || 'http://localhost:3000/' + artist.img" class="img-fluid" alt="No image"
+                    (click)="photoInput.click()" style="object-fit: cover;">
+        </div>
+    </div>
+</div>
+

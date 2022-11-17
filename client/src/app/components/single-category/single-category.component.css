@@ -1,0 +1,34 @@
+.product-item{
+    width: 270px;
+    height: 380px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-top: 80px;
+}
+ul{
+    display: flex;
+}
+
+.pi-text{
+    border-bottom: #ccc 1px solid;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+@media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      float: left;
+    }
+  }

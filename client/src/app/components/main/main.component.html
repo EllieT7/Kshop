@@ -1,0 +1,438 @@
+<section class="hero-section">
+    <div class="hero-items owl-carousel">
+        <div class="single-hero-items set-bg" data-setbg="assets/img/banner1.jpg">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-5" style="color: white !important;">
+                        <h1 style="color: white !important;" >Encuentra los mejores productos</h1>
+                        <p style="color: white !important;">Te ofrecemos productos de calidad, 100% originales</p>
+                        <a routerLink="/products" class="primary-btn">Compra ahora</a>
+                    </div>
+                </div>
+                <div class="off-card">
+                    <h2>💜</h2>
+                </div>
+            </div>
+        </div>
+        <div class="single-hero-items set-bg" data-setbg="assets/img/banner2.jpg">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-5" style="color: white !important;">
+                        <h1 style="color: white !important;" >Tus artistas favoritos</h1>
+                        <p style="color: white !important;">Te ofrecemos variedad de productos acercandote atus artistas favoritos</p>
+                        <a routerLink="/products" class="primary-btn">Compra ahora</a>
+                    </div>
+                </div>
+                <div class="off-card">
+                    <h2>⭐</h2>
+                </div>
+            </div>
+        </div>
+        <div class="single-hero-items set-bg" data-setbg="assets/img/banner3.jpeg">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-5" style="color: white !important;">
+                        <h1 style="color: white !important;" >Ofrecemos los mejores precios</h1>
+                        <p style="color: white !important;">Te ofrecemos precios reducidos, quédate pendiente a nuestras ofertas semanales</p>
+                        <a routerLink="/products" class="primary-btn">Compra ahora</a>
+                    </div>
+                </div>
+                <div class="off-card">
+                    <h2>💸</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <div class="banner-section spad">
+    <div class="container-fluid">
+        <h2 class="text-center m-5">Artistas destacados</h2>
+        <div class="row">
+            
+                <div class="col-lg-4">
+                    <a routerLink="/artists/products/1">
+                    <div class="single-banner">
+                        <img src="assets/img/banner-1.webp" alt="" />
+                        <div class="inner-text">
+                            <h4>BTS</h4>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-lg-4">
+                    <a routerLink="/artists/products/3">
+
+                    <div class="single-banner">
+                        <img src="assets/img/banner-2.jpg" alt="" />
+                        <div class="inner-text">
+                            <h4>TXT</h4>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            
+            
+                <div class="col-lg-4">
+                   <a routerLink="/artists/products/2"> 
+                    <div class="single-banner">
+                        <img src="assets/img/banner-3.webp" alt="" />
+                        <div class="inner-text">
+                            <h4>TWICE</h4>
+                        </div>
+                    </div>
+                     </a>
+                </div>
+           
+        </div>
+    </div>
+  </div>
+  <section class="women-banner spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="product-large set-bg" data-setbg="assets/img/albums.png">
+                    <h2>Albums</h2>
+                    <a style="color: white;" routerLink="/category/1">Descubre más</a>
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <div class="filter-control">
+                    <ul>
+                        <li class="active">Albums recientes</li>
+                    </ul>
+                </div>
+                <div class="product-slider owl-carousel">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/c37ace2d-0ebd-438a-a659-a12b930f091c.jpg'" alt="" />
+                            <div class="sale">Sale</div>
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/1"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/1">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">BTS</div>
+                            <a routerLink="/products/1">
+                                <h5>Map of the Soul: 7</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 230
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/a48c2b88-9a0a-43f5-8b40-324f7b4d5bdf.jpg'" alt="" />
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/2"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/2">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">BTS</div>
+                            <a routerLink="/products/2">
+                                <h5>LOVE YOURSELF 結 ‘Answer’</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 238
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/c9665561-9fa6-4b03-a151-34843482b8ab.jpg'" alt="" />
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/3"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/3">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">TXT</div>
+                            <a routerLink="/products/3">
+                                <h5>The Chaos Chapter: FREEZE</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 250
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/ae68f541-a725-42c8-bf22-86b8077be587.png'" alt="" />
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/10"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/10">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">TXT</div>
+                            <a routerLink="/products/10">
+                                <h5>minisode2: Thursday's Child</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 230
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="deal-of-week set-bg spad" data-setbg="assets/img/oferta.png">
+    <div class="container">
+        <div class="col-lg-6 text-center">
+            <div class="section-title">
+                <h2>Oferta de la semana</h2>
+                <p style="color: white;">The Astronaut<br /> By JIN
+                    Primer single en solitario </p>
+                <div style="color: white;" class="product-price">
+                    200 Bs
+                    <span style="color: white;">/Album</span>
+                </div>
+            </div>
+            <div class="countdown-timer" id="countdown">
+                <div class="cd-item">
+                    <span>56</span>
+                    <p>Días</p>
+                </div>
+                <div class="cd-item">
+                    <span>12</span>
+                    <p>Hrs</p>
+                </div>
+                <div class="cd-item">
+                    <span>40</span>
+                    <p>Mins</p>
+                </div>
+                <div class="cd-item">
+                    <span>52</span>
+                    <p>Segs</p>
+                </div>
+            </div>
+            <a routerLink="/products/16" class="primary-btn">Comprar ahora!</a>
+        </div>
+    </div>
+  </section>
+  <section class="man-banner spad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="filter-control">
+                    <ul>
+                        <li class="active">Lightsticks populares</li>
+                    </ul>
+                </div>
+                <div class="product-slider owl-carousel">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/fb7b3fd3-8a7c-4056-b8ce-12cdf091e8a9.jpg'" alt="" />
+                            <div class="sale">Sale</div>
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/12"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/12">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">BTS</div>
+                            <a routerLink="/products/12">
+                                <h5>Lightstick BTS - ARMY BOMB</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 400
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/fa678703-93ed-4fad-b15d-2ec332662525.jpg'" alt="" />
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/13"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/13">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">TXT</div>
+                            <a routerLink="/products/13">
+                                <h5>Lightstick TXT</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 300
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/78c2ecda-77b3-4ae5-91d3-7a0368387274.jpg'" alt="" />
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/14"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/14">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">ENHYPHEN</div>
+                            <a routerLink="/products/14">
+                                <h5>Lightstick Enhyphen</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 180
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img [src]="'http://localhost:3000/uploads/7b88ee91-9256-4f79-ac28-02e2c3ed16fc.png'" alt="" />
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
+                            </div>
+                            <ul>
+                                <li class="w-icon active"><a routerLink="/products/15"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a routerLink="/products/15">Comprar</a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">G-IDLE</div>
+                            <a routerLink="/products/15">
+                                <h5>Lightstick G-IDLE</h5>
+                            </a>
+                            <div class="product-price">
+                                Bs. 150
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="product-large set-bg m-large" data-setbg="assets/img/lightstick.png">
+                    <h2>Lightsticks</h2>
+                    <a style="color: white;" routerLink="/category/3">Descubre más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <section class="latest-blog spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Quiénes somos</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <p class="text-center" style="font-size:20px;">Somos una tienda online y física que se encarga de la distribución de mercancía de artistas de Kpop en general.
+            <br>
+            De fans para fans 💜 </p>
+        </div>
+        <div class="benefit-items">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="assets/img/icon-1.png" alt="" />
+                        </div>
+                        <div class="sb-text">
+                            <h6>Envío gratis</h6>
+                            <p>Para pedidos sobre los 99 Bs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="assets/img/icon-2.png" alt="" />
+                        </div>
+                        <div class="sb-text">
+                            <h6>Delivery a tiempo</h6>
+                            <p>Entregas siempre puntuales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="assets/img/icon-1.png" alt="" />
+                        </div>
+                        <div class="sb-text">
+                            <h6>Pago seguro</h6>
+                            <p>Pago 100% asegurado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="#">KSHOP</a>
+                    </div>
+                    <ul>
+                        <li>Direccion: Av. del Maestro</li>
+                        <li>Teléfono: 2221250 </li>
+                        <li>Email: kshop@gmail.com</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="newslatter-item">
+                    <h5>Subscribete a nuestro correo!</h5>
+                    <p>Te notificaremos sobre las últimas novedades</p>
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="Ingresa tu correo" />
+                        <button type="button">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-reserved">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                       
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | KShop 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>

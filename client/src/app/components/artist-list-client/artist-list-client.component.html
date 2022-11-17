@@ -1,0 +1,23 @@
+<div style="padding:2% 8%;">
+<h2 class="text-center m-5">Todos los artistas</h2>
+<div class="cards-list">
+    <!-- <div *ngFor="let artist of artists" class="card 1">
+      <div class="card_image"> <img [src]="'http://localhost:3000/'+artist.img" /> </div>
+      <div class="card_title title-white">
+        <p style="font-size: 23px; color: white;">{{artist.nombre}}</p>
+      </div>
+    </div> -->
+    <a href="#" *ngFor="let artist of artists">
+        <figure>
+        <img [src]="'http://localhost:3000/'+artist.img" /> 
+          <div class="date">
+            <span class="card-date-day">20</span>
+            <span class="card-date-month">ITEMS</span>
+            </div>
+          <figcaption>
+            <h4> <span>{{artist.nombre}}</span></h4>
+          </figcaption>
+        </figure>
+    </a>
+</div></div>
+

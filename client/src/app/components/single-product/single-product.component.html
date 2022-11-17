@@ -1,0 +1,23 @@
+<div class="container1 row">
+    <div class="images col-sm">
+      <img [src]="'http://localhost:3000/'+product.img" />
+    </div>
+    <div class="product col-sm">
+      <p>{{product.tipo_producto_id_tp}}</p>
+      <h1>{{product.nombre}}</h1>
+      <h2>Bs. {{product.precio}}</h2>
+      <p class="desc">{{product.descripcion}}</p>
+      <div class="quantity">
+        <span>Cantidad: </span>
+        <input [(ngModel)]="cantidad" type="number" min="1" max="9" step="1" value="1">
+      </div>
+      <br>
+      <a routerLink="/comprar/{{product.id_producto}}/{{cantidad}}">
+      <div class="buttons">
+        <button class="add">COMPRAR</button>
+        <button class="like"><span>♥</span></button>
+      </div></a>
+    </div>
+  </div>
+  
+

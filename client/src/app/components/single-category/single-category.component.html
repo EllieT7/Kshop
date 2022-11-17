@@ -1,0 +1,41 @@
+<!-- 
+<div class="row">
+    <h3 class="text-center m-5">Todos los productos de la categoria</h3>
+    <div class="col-sm-3" *ngFor="let product of products">
+        <div class="card" style="width: 18rem;">
+            <img [src]="'http://localhost:3000/'+product.img" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{product.nombre}}</h5>
+                <p class="card-text">{{product.descripcion}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+    </div>
+</div> -->
+
+<div style="padding:2% 8%;">
+    <h2 class="text-center mt-5">Todos los productos de la categoria</h2>
+    <div class="cards-list">
+        <div *ngFor="let product of products" class="product-item">
+            <div class="pi-pic">
+                <img [src]="'http://localhost:3000/'+product.img"/>
+                <div class="sale">Sale</div>
+                <div class="icon">
+                    <i class="icon_heart_alt"></i>
+                </div>
+                <ul>
+                    <li class="w-icon active"><a routerLink="/products/{{product.id_producto}}"><i class="icon_bag_alt"></i></a></li>
+                    <li class="quick-view"><a routerLink="/products/{{product.id_producto}}">Comprar ahora</a></li>
+                </ul>
+            </div>
+            <div class="pi-text">
+                <div class="catagory-name">Coat</div>
+                <a routerLink="/products/{{product.id_producto}}">
+                    <h5>{{product.nombre}}</h5>
+                </a>
+                <div class="product-price">
+                   Bs. {{product.precio}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
