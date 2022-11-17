@@ -7,7 +7,7 @@
         <p style="font-size: 23px; color: white;">{{artist.nombre}}</p>
       </div>
     </div> -->
-    <a href="#" *ngFor="let artist of artists">
+    <a routerLink="/artists/products/{{artist.id_artista}}"*ngFor="let artist of artists">
         <figure>
         <img [src]="'http://localhost:3000/'+artist.img" /> 
           <div class="date">
