@@ -36,6 +36,10 @@ Producto individual
 
 ---
 
+Contáctanos
+![image](https://github.com/EllieT7/Kshop/assets/87090365/5d04a8dc-9204-41ea-a9f4-f5c1b0e7ccbd)
+
+---
 ## Social media :mailbox_with_no_mail:
 [![Twitter URL](https://img.shields.io/twitter/url?color=%2362D6E6&label=Naomi&logo=instagram&logoColor=%2362D6E6&style=flat-square&url=https%3A%2F%2Fwww.instagram.com%2Falejorc_)](https://www.instagram.com/elliet7_/)
 
